@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: arial, sans-serif;
+}
+
+header {
+    height: 100vh;
+    max-width: 1920px;
+    background-image: url(img/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header > * {
+    position: absolute;
+}
+
+.logo {
+
+    top: 30px;
+    left: 60px;
+}
+
+header h1 {
+    width: 100%;
+    top: 45%;
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px
+}
+
+header button {
+    bottom: 40px;
+    right: 80px;
+    font-size: 30px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+}
+
+header button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media(max-width:1024px) {
+    header {
+        background-size: cover;
+    }
+}
+
+@media(max-width:812px) and (orientation: landscape) {
+    header img {
+        width: 25%;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header button {
+        font-size: 15px;
+        bottom: 40px;
+        right: 30px;
+    }
+}
+
+@media(max-width:533px) and (orientation: landscape) {
+
+    header h1 {
+        top: 40%;
+        font-size: 20px;
+    }
+
+    header button {
+        font-size: 10px;
+        bottom: 20px;
+        right: 10px;
+    }
+}
+
+@media (max-width:414px) and (orientation: portrait) {
+    .logo {
+        width: 60%;
+        left: 20%;
+    }
+
+    header h1 {
+        font-size: 30px;
+        line-height: 180%;
+    }
+
+    header button {
+        width: 80%;
+        right: 10%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:360px) and (orientation: portrait) {
+
+    header h1 {
+        top: 40%;
+        font-size: 25px;
+        line-height: 150%;
+    }
+
+    header button {
+        width: 60%;
+        right: 20%;
+        font-size: 18px;
+    }
+}
+
+section {
+    margin: 80px auto 0 auto;
+    width: 86%;
+}
+
+section p {
+    line-height: 150%;
+    font-size: 15px;
+}
